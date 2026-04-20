@@ -5,7 +5,7 @@
 export default function Frontpage(){
     return(
         <div className= "flex h-screen w-full overflow-hidden">
-            <div className="relative flex-1 bg-cover bg-center cursor-pointer transition-transform duration-700 hover:scale-105" style={{backgroundImage: "url('/femme.png')"}} > 
+            <div className="relative flex-1 bg-cover bg-center cursor-pointer transition-transform duration-700 hover:scale-105" style={{backgroundImage: "url('/fhand.png')"}} > 
              <div className="absolute inset-0 bg-black/40 flex flex-col justify-center items-center text-white text-center">
              <h1 className="text-4x1 md: text-6x1 font-bold tracking-wide leading-tight">INDULGE<br/>YOUR SENSES
              </h1>
@@ -16,7 +16,7 @@ export default function Frontpage(){
             </a>
              </div>
             </div>
-        <div className="relative flex-1 bg-cover bg-center cursor-pointer transition-transform duration-700 hover:scale-105" style={{backgroundImage: "url('/malee.png')"}}>
+        <div className="relative flex-1 bg-cover bg-center cursor-pointer transition-transform duration-700 hover:scale-105" style={{backgroundImage: "url('/mhand.png')"}}>
         <div className="absolute inset-0 bg-black/40 flex flex-col justify-center items-center text-white text-center">
          <h1 className="text-4x1 md: text-6x1 font-bold tracking-wide leading-tight">
             INDULGE<br/>YOUR SENSES

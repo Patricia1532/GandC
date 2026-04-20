@@ -23,13 +23,13 @@ export default function Navbar() {
  
   const{cartItems}= useCart();
   return (
-    <nav className="w-full fixed top-0 left-0 z-50">
+    <nav className="w-full h-12 fixed top-0 left-0 z-50">
       <div className="max-w-7x1 mx-auto px-6 py-4">
         <div className="backdrop-blur-x1 bg-white border border-white/20 rounded-full px-6 py-3 flex itens-center justify-between shadow-lg">
-          <div className="flex items-center space-x-2 cursor-pointer">
-            <img src="/MAIN PERFUME LOGO 2.jpg" className="h-10 w-10" />
+          <div className="flex items-center h-full">
+            <img src="/glogo.png" className="w-full h-12 w-auto object-contain" />
           </div>
-          <ul className="md:flex items-center space-x-6 font-medium text-orange hidden">
+          <ul className="md:flex items-center space-x-6 font-medium text-pink hidden">
             <li className="relative group">
               <a
                 href="/"
@@ -40,7 +40,7 @@ export default function Navbar() {
               <span className="absolute inset-0 rounded-full ground-hover:opacity-100 transition"></span>
             </li>
             <li className="relative group">
-              <a href="#" className="px-4 py-2 relative z-10 text-pink-500">
+              <a href="/AboutUs" className="px-4 py-2 relative z-10 text-pink-500 hover:underline">
                 ABOUT US
               </a>
               <span className="absolute inset-0 rounded-full ground-hover:opacity-100 transition"></span>
