@@ -54,7 +54,7 @@ export default function Navbar() {
               </a>
               <span className="hidden py-8 group-hover:flex justify-center item-center absolute inset-0  ground-hover:opacity-100 transition">
                 <div className="bg-white h-30 w-max p-4">
-                  <p>dropdown</p>
+                  <p></p>
                 </div>
               </span>
             </li>

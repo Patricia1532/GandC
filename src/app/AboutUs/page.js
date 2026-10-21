@@ -17,7 +17,7 @@ export default function AboutUs(){
         <div className="absolute inset-0 bg-pink-900/60"></div>
 
         <div className="relative z-10 max-w-6xl mx-auto px-16">
-          <h1 className="text-6xl font-serif text-white">Exquis</h1>
+          <h1 className="text-6xl font-serif text-white">G & C PERFUMES </h1>
           <p className="mt-6 max-w-xl text-lg text-pink-100 leading-relaxed">
             A refined fragrance house inspired by nature,
             minimalism, and intentional craftsmanship.
@@ -60,7 +60,7 @@ export default function AboutUs(){
           <div className="order-1 md:order-2">
             <h2 className="text-7xl font-serif text-white">02</h2>
             <p className="mt-6 max-w-md text-lg text-pink-100 leading-relaxed">
-              We source ingredients responsibly, ensuring
+              We source perfumes from different brands, ensuring
               sustainability remains central to every blend.
             </p>
           </div>

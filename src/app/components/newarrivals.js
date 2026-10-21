@@ -1,77 +1,72 @@
-export default function NewArrivals(){
-    return(
-        <section className="w-full py-10">
-     <h2 className="text-2xl font-semibold mb-6">
-    New Arrivals
-     </h2>
-     <div className="relative">
-   <button 
-      className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow p-2 rounded-full"
-      
-    >
-    </button>
-    <div id="arrivalCarousel" className="flex gap-6 overflow-x-auto scrollbar-hide px-2">
-<div className="min-w-[250px] snap-start bg-white p-4 rounded-lg shadow">
-        <img src="/zara1.jpg" className="h-40 w-full object-contain mx-auto" />
-        <h3 className="mt-4 text-sm font-medium">Armaf Club De Nuit 105ml</h3>
-        <p className="text-gray-500 text-sm">₦45,000</p>
-        <button className="mt-4 w-full bg-pink-600 text-white py-2 rounded">
-          Add to Cart
-        </button>
-      </div>
-    <div className="min-w-[250px] snap-start bg-white p-4 rounded-lg shadow">
-        <img src="/yslperf.jpg" className="h-40 w-full object-contain mx-auto" />
-        <h3 className="mt-4 text-sm font-medium">Armaf Club De Nuit 105ml</h3>
-        <p className="text-gray-500 text-sm">₦45,000</p>
-        <button className="mt-4 w-full bg-pink-600 text-white py-2 rounded">
-          Add to Cart
-        </button>
-      </div>
-  
-  <div className="min-w-[250px] snap-start bg-white p-4 rounded-lg shadow">
-        <img src="/valentino.png" className="h-40 w-full object-contain mx-auto" />
-        <h3 className="mt-4 text-sm font-medium">Armaf Club De Nuit 105ml</h3>
-        <p className="text-gray-500 text-sm">₦45,000</p>
-        <button className="mt-4 w-full bg-pink-600 text-white py-2 rounded">
-          Add to Cart
-        </button>
-      </div>
 
-      <div className="min-w-[250px] snap-start bg-white p-4 rounded-lg shadow">
-        <img src="/givenchy.jpg" className="h-40 w-full object-contain mx-auto" />
-        <h3 className="mt-4 text-sm font-medium">Armaf Club De Nuit 105ml</h3>
-        <p className="text-gray-500 text-sm">₦45,000</p>
-        <button className="mt-4 w-full bg-pink-600 text-white py-2 rounded">
-          Add to Cart
+"use client";
+
+import { useRef } from "react";
+
+export default function NewArrivals() {
+  const carouselRef = useRef(null);
+
+  const scrollCarousel = (amount) => {
+    if (carouselRef.current) {
+      carouselRef.current.scrollBy({ left: amount, behavior: "smooth" });
+    }
+  };
+
+  const products = [
+    { img: "/zara1.jpg",     name: "Armaf Club De Nuit 105ml", price: "₦45,000" },
+    { img: "/yslperf.jpg",   name: "Armaf Club De Nuit 105ml", price: "₦45,000" },
+    { img: "/valentino.png", name: "Armaf Club De Nuit 105ml", price: "₦45,000" },
+    { img: "/givenchy.jpg",  name: "Armaf Club De Nuit 105ml", price: "₦45,000" },
+    { img: "/baccarat.jpg",  name: "Armaf Club De Nuit 105ml", price: "₦45,000" },
+    { img: "/alexandar.jpg", name: "Armaf Club De Nuit 105ml", price: "₦45,000" },
+  ];
+
+  return (
+    <section className="w-full py-10">
+      <h2 className="text-2xl font-semibold mb-6">New Arrivals</h2>
+
+      <div className="relative">
+        <button
+          type="button"
+          aria-label="Scroll left"
+          className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow p-2 rounded-full"
+          onClick={() => scrollCarousel(-300)}
+        >
+          &#10094;
+        </button>
+
+        <div
+          ref={carouselRef}
+          className="flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-hide px-2"
+        >
+          {products.map((p, i) => (
+            <div
+              key={i}
+              className="min-w-[250px] snap-start bg-white p-4 rounded-lg shadow"
+            >
+              <img
+                src={p.img}
+                alt={p.name}
+                className="h-40 w-full object-contain mx-auto"
+              />
+              <h3 className="mt-4 text-sm font-medium">{p.name}</h3>
+              <p className="text-gray-500 text-sm">{p.price}</p>
+              <button className="mt-4 w-full bg-pink-600 text-white py-2 rounded">
+                Add to Cart
+              </button>
+            </div>
+          ))}
+        </div>
+
+        <button
+          type="button"
+          aria-label="Scroll right"
+          className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow p-2 rounded-full"
+          onClick={() => scrollCarousel(300)}
+        >
+          &#10095;
         </button>
       </div>
-
-    <div className="min-w-[250px] snap-start bg-white p-4 rounded-lg shadow">
-        <img src="/baccarat.jpg" className="h-40 w-full object-contain mx-auto" />
-        <h3 className="mt-4 text-sm font-medium">Armaf Club De Nuit 105ml</h3>
-        <p className="text-gray-500 text-sm">₦45,000</p>
-        <button className="mt-4 w-full bg-pink-600 text-white py-2 rounded">
-          Add to Cart
-        </button>
-      </div>
-
-<div className="min-w-[250px] snap-start bg-white p-4 rounded-lg shadow">
-        <img src="/alexandar.jpg" className="h-40 w-full object-contain mx-auto" />
-        <h3 className="mt-4 text-sm font-medium">Armaf Club De Nuit 105ml</h3>
-        <p className="text-gray-500 text-sm">₦45,000</p>
-        <button className="mt-4 w-full bg-pink-600 text-white py-2 rounded">
-          Add to Cart
-        </button>
-      </div>
-
-    </div>
-
-    <button 
-      className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow p-2 rounded-full"
-    >
-      &#10095;
-    </button>
-     </div>
-        </section>
-    )
+    </section>
+  );
 }

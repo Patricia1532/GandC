@@ -45,7 +45,7 @@ export default function Carousel() {
         <div className="flex w-full   h-[50vh] lg:h-[80vh] bg-[url('/zara54.png')] bg-cover bg-center bg-no-repeat">
           <div className="absolute left-10 top-1/2 -translate-y-1/2 text-white space-y-4 ml-12">
             <h1 className="text-5xl font-extrabold drop-shadow-lg">
-              lait de coco
+              Zara
             </h1>
 
             <p className="text-xl font-medium drop-shadow-md">
@@ -62,7 +62,7 @@ export default function Carousel() {
         <div className="flex w-full h-[50vh] lg:h-[80vh] bg-[url('/blue4.png')] bg-cover bg-center bg-no-repeat">
           <div className="absolute left-10 top-1/2 -translate-y-1/2 text-white space-y-4 ml-12">
             <h1 className="text-5xl font-extrabold drop-shadow-lg">
-              dior savage
+              Dior savage
             </h1>
 
             <p className="text-xl font-medium drop-shadow-md">
@@ -79,7 +79,7 @@ export default function Carousel() {
         <div className="flex w-full  h-[50vh] lg:h-[80vh] bg-[url('/prada22.png')] bg-cover bg-center bg-no-repeat">
           <div className="absolute left-10 top-1/2 -translate-y-1/2 text-white space-y-4 ml-12">
             <h1 className="text-5xl font-extrabold drop-shadow-lg">
-              valentino
+              Prada
             </h1>
 
             <p className="text-xl font-medium drop-shadow-md">
